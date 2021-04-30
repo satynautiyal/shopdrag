@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <tittle>
+  </tittle>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    .front {
+      height: 100%;
+      background: linear-gradient(to bottom right, #6666ff 0%, #cc66ff 100%);
+    }
+
+    .my-header {
+      height: 100vh;
+      background: linear-gradient(to bottom right, #003399 0%, #ff66ff 100%)
+    }
+
+    .my-header img {
+      z-index=-22;
+      top: 0;
+      position: absolute;
+      opacity: 0.3;
+      height: 100vh;
+    }
+
+    .my-header .navs {
+      z-index: 99999;
+      background: rgba(0, 0, 0, 0) !important
+    }
+
+    .navbar li {
+      color: white
+    }
+
+    .btn {
+
+      font-family: 'Arial';
+
+      background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), linear-gradient(101deg, #788cff, #ff48fa);
+      background-origin: border-box;
+
+      box-shadow: 2px 1000px 1px #fff inset;
+    }
+
+    .btn:hover {
+      box-shadow: none;
+      color: white;
+    }
+
+    .card-group .card .card-body {
+      position: absolute;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.8);
+      /* Black background with 0.5 opacity */
+      color: #f1f1f1;
+      width: 100%;
+      font-size: 13px;
+      padding: 9px;
+    }
+
+    .card-group .card .card-body:hover{
+      position: absolute;
+      bottom: 0;
+      background: linear-gradient(to bottom right, rgba(47, 69, 168, 0.8), rgba(190, 71, 181, 0.8));
+      /* Black background with 0.5 opacity */
+      color: #f1f1f1;
+      width: 100%;
+      font-size: 13px;
+      padding: 9px;
+    }
+
+    .bttn {
+      border: none;
+      background-color: inherit;
+      color: #cc72e2;
+      font-size: 9px;
+    }
+
+    .bttn:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    hr.footer {
+      border: 1px solid grey
+    }
+
+    a:link,
+    a:visited {
+      color: grey;
+      cursor: auto;
+      font-size: 15px;
+    }
+    .my-header .text1{color:white !important;
+    opacity: 1!important;}
+
+
+    ul a:hover{
+  color: white !important;
+}
+
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: white;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+li > a:hover:after{
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+.active{
+  color:white;
+}
+.img9 {width:108%!important;
+  
+margin-left: -15px;}
+@media screen and (max-width: 768px)and (min-width: 200px) {
+  .navs2{margin-left: 0px!important;}
+  .afternav{margin-top: 30%!important;}}
+  @media screen and (max-width: 1200px)and (min-width: 1000px) {
+  
+  .afternav{margin-top: 40%!important;}}
+
+  @media screen and (max-width: 700px)and (min-width: 200px) {
+   .about{ font-size: 5px! important;}}
+  
+  </style>
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div>
+    <div class="my-header" id=top><br>
+     
+      <nav class="navbar navs navbar-expand-lg navbar-dark ">
+        <a class="navbar-brand" href="#"><img src=""></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto navs2" style="margin-left: 30%;">
+            <li class="nav-item active">
+              <a class="nav-link active" href="#" >Demos </a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active" href="#">Featured</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active" href="#">Pages</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active" href="#">Elements</a>
+            </li><li class="nav-item">
+              <a class="nav-link active" href="#">Portfolio</a>
+            </li><li class="nav-item ">
+              <a class="nav-link active" href="#">Blog</a>
+            </li>
+            <li class="nav-item ">
+              <a class="nav-link active" href="#">Shop</a>
+            </li>
+           
+           
+            
+          </ul>
+         
+        </div>
+      </nav>
+      <img src="https://lh3.googleusercontent.com/LVB-VQfqENXelLrMB7XUQJb2fHSHRvkW-JUGH4KuKxIiROZX5nIdtuJuXtBivtlAfYrdu4ax4iGI4cf2rcsOzUt6SahrhU6b37RNOI5m1kEQAKJ-Kp-sT9N4ouRCPshrctU_vdOO-zLuYrpQIyvaqbd6wyxKB8tIBnzaXO9DjuRWAbZC5YALyCiEvAiyyiKIk8Gyt78q83gUue991loB1XHcrK_oa6Vm4h4Ei1FpRbW1xsDfPn6pOtv_xzYYL7MkDeETELTzWhLD7X9uAQA7qBJYUKMAqnuW0dc0Gwi9scyFU8570ArpgBzuYSt2hw2P8GRZRKiwjIjEQLw7Dz33TiOfkAYDEN9szBMS379onLtTWzKXRZ4EjnRjjA_jE-22QN4yEZXwQqDQA0bEkrmDhVtSn7rXHH7vdSFsolXqrgaoLrdi8FX-ZZqwASAZz-lU7vxmPECbBVpnsRdGYfHyNgci-61xYnCqVc4LIzkVr7cQhEEyqNYuDlxsR9uoQ7t9yNnTww9FtwOzzuFrsIRx3TfBu89PxQ-f9Up0YpQcQHE3OD23OVCeVk543Ca5ZIDEJJ1CMz4sUQ5ezaqv89uXTT03ZFjOFd6lfLGC46rgOAmDVhhSL-fg81p7Ndh6F3IZypeZRXFKfgx3YVVoVq7Fbu6MaOhcb8BIMLkINo6UhKH_3dvGwioII-oENH9w=w760-h443-no?authuser=0" width=100% height="700px">
+
+      <div class="afternav" style="margin-top: 10%;"></div>
+      <div style="color:white;font-size: 12px;text-align:center;">W &nbsp; E &ensp;&ensp; A &nbsp; R&nbsp; E
+        &ensp;&ensp;
+        A &nbsp; W &nbsp; E &nbsp; S &nbsp; O &nbsp; M &nbsp; E</div>
+      <div class="text1" style="color:rgb(500, 500, 500);font-size: 64px;text-align:center;"><b>Business &
+          Consultancy</b>
+      </div>
+      <div style="color:white;font-size: 24px;text-align:center;">Everything You Need.To Start Selling Online
+        Beautifully.
+      </div>
+    </div>
+    <div class="text-center">
+      <a href="#bottom" >
+   <img src="https://lh3.googleusercontent.com/JXqZy34Yjm-O0MqNjjgwp-niGSKi3da7tlbwpCkfXsCU18j8ajqjo4Gk9BCJfWwiAfaBzzQ3JPZ9HMYL0jVxPbzC8hNEL6euQZMBkGy2BsqcrEC8FC1nbdIaJD7VEw7KzjhN5yEODKh0e2sLTEBpOGccCQmovBSE7TP2_YlPRAp_1uI4jlD5zPOm5Ih1h-Aj45dVQ8ptSBSQJg_41iL_Ct0WraqRjzO20N66RYJM3xkhwJPNJkbnHsyEidgkNXgAOyH-6oekth1ExtBz93hZalC9V--3qeCzVgpl4Pf__Q1eS6vrOHQwcN90A2qa18Yxiyni_v1gCguazYgEn-civ1c899lwkIPxDeDVaYsuAdRV69Eljirbez67iRufnVKQXRFqiZV5rLOyzBKwU97FKbFiyi0X9sSQkT17rP1FRb59aLkuevsWDeAxDs2TUBOGM-lIDvhbtFfdze2Xx8WoIYqfvO1nlN1GU6OjAOzMnM-Adj-dyRGtAakXpRnWkZUvQX87eMs-1EGTiEHHn2OYg98OlDCweRGc8q2yoBdOSJTf7vTYzDOHbgGIytP6V1ZAjma4L5rC2onxEuYjNxdK53fZGL5Cr4C-UkAdGMDLLx77UNzsAjWrjJvHGyRRTCdOSXD2A_eR6VT5lZXH-mPnzaXeOlfmJIUvrRrVBCRxEcyNOYLFx3ty57XR2WZK=w225-h80-no?authuser=0" width=10% height="55px" style="position: relative;top:-48px;"></a></div> <br /><br />
+    <div>
+      <div style="text-align: center;font-size:48px;"><b>Welcome to Podes</b></div>
+      <div style="text-align: center;font-size:18px;">Our foundation may be insurance,but we have evolved and so have
+        the
+        solutions that we provide.
+        <br />We develop brand strategies and create engaging content for scientific content for scientific reasearch to
+        connect with new audiences,
+        build active <br />communities for greater funding and support,and share the human stories pf discovery and
+        innovation.</div><br /><br />
+      <div style="text-align: center;">
+        <button type="button" class="btn " style=" border-radius:16px; padding-left: 40px;padding-right: 40px;padding-top:10px"><b>About
+            us</b></button></div>
+      <br /><br /><br />
+    </div>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-6">
+          <img src="https://lh3.googleusercontent.com/fnCN_9Kn0TReSRb_VjQeo7-KSFNsfaqNmuef0OmZC863ICp25Bvqp9cP14fzyztVYIzf3Nc4yCqcnCNj6KCY2wjuPAZnKW6N4GXtJmxBxY5vBuEP-zBXwPcX-cxwzbrogN8_22H3AtzrhjGHq9qbqCktTJUd4re47StWY_aJp3ivFre2EnWIEudnjGISoLIX_DvjAMtXig1f29GFoQo4Yv6qO9SSPqPPKJwUyn1VPDREGE97XHJV3vDvltkLIB56WQS5fs7Pn5FKf-oJXkY-g1zyQIgoIzbIhFdv2H9D5Uz0mHELaAypib8U5Xp734oLflyOZdBQok6Xhsm4DBmo_mzgy5x8lPtBa2v5DhR8PcJ90zQuQ3ZTS4mO4Zea7zXnH4ih0DCE4yTIdiToetn5q0gs5N39zhCBusN11cusPCZ-vJSYyfylPy5SxIinGs224JNuSBoueYa2rEb89XV2-kaEuFjZRBsdnZyx2i6IpCUQtah9gBY62Z5-CxcipcbVnaWy5hZ1WviqCFUtmUO6ZXzn6293pVXlOM6k7QpD0oyC-jDxJsaFs6Tk2dKIVoRghIYsqQ2YAVTI_fe8JXkof_1UGkEKcdXeg2JAhEJHaLTfX5Vid9Dt3tHI5KG51uMh3KaYIVjJjkjWKiHMlspxNUbFWPL8ad6jh6ZlnZWq-EzRhU8AS_9ls8w90ZBU=w816-h596-no?authuser=0" alt="nothing" class="img9">
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-3" style="  display: flex;
+        align-items: center;background-color:rgb(31, 25, 25) ;">
+          
+          <ul >
+            <li style="color: #ffffff;"><img src="https://lh3.googleusercontent.com/rlAnVrYQJHxrtGGoAwK83SZ-8T8mbafGeBZS87tU_SM6AnOL_UohUXsw10qelyYy9AC2-Lm5Ikw4IriVR4Y7_zQrJvbmOhWKFnbzeUDvUA6MRM-6CzNTN1pdv-WJRU8P1-5n_HGL2UNIT5sVsPz2Jt0C17Nti2F1eYgWFPGIo8pJs8XEhvVR9FRkeAknyB-ChpGji51tWS9VEVhuW1Sk8yjNJIzC0_YGkScdcKT6WJG4DlUMOPRS4L1U2x5p82xdI06mTmTKrJx-YCNSw9YWT5aJmevox2xetjCcu_S84zsa93BAjN1c-rwhV8Y4VnNL6gMkBBT_WWOljqo63WGqcOriUGkRRcM8tp3AY3ZR4HrTfHC41WAF_jEgSNtr6qHuBJa9Um-S121C2AaJfN3wVV63KtVdM7T4_8glKBCIcGpJ2eIwgFGZLBtodJht903rBLGGLx70hNpE7Zz5jQ4rSM2kVLAi6se5-MHzzIi2jInub7Oq9OfRkmzKspvIkt2VAi4JN0kDbqpgyNaqtQQaoyQM2IIyNLBR2zyA73kc0QAynBzg4TxhH5jS3Lxn6glTdgbytqf_HWEZRvc8V2W-HChthQ-7Fe_kHM_p1yhOLlssTSwE_4NJMSAVP6ky01VzlqEST2897BG5F8ze3ML24rCW04HWB7j00gUFkrfXDnAv4OOxI27xawP22va2=w61-h81-no?authuser=0" width="35px">
+              <br>
+              <p style="font-size:15px">Online Consulting</p>
+              
+            <p style="font-size: 11px;">  The Podes that recognize the talent and effort of the best
+              web designers,developers and agencies in the world></p>
+            </li>
+            <li style="color: #ffffff;"><img src="https://lh3.googleusercontent.com/zMuwy2mnL8s_fTt0SAQ4yFMc85roqVQAvo-D0bqPe-Vb5pqF7BboBdCSW6aY_73YFX1h9yXWS3AbNTU4X0SR2cgZOtt2fKyblYGqAQE8oekFTFk4AXx065vCtHlxMzWyIs7MZQjE-EISHSN_AQc-DyoDXBBtkKUWTMdxa4Sk7ygj_I3DDGUw_XjD8Z7vrG1e1_83AJXswvcHus9tAA9f8W2wc5jM9U7cZJM3QsZot0qWILPNLeyLcbtmnUJekKgArPFWmYRjI3yiU9t5RCKN-t6S6iACHscoLeM1X9D1aZ2GFKFQjNVCrOMB29DjjdphNeH7Ki5bN0txfWrog81MR0y62tpzjEBT0nAUIFOKEhuWloPw-yt433e-fPsgHRcn1XTYX9D7e05ZdUIHVbN3zpiOCvVvNwV2ZtUipxutVvreJ5KM3JPCLu8eIB7DoUpT7qxZK9d9eCXsRPaTHVXov6s-rtjttEEtddEEJrEIZJYHGoEQTm4wNWXuBEkxlAsBZsSHUMeRJkPhYjse7XrLMHuvjTqiD7CFqIiRxJSZhT1eqWDmu-xJggitt5ubvkuEBtbe1ny8pu6A7xWbTVOo2FRQRGgtdbxMtcyI_tpAOzxI7yVdcA71qRvH4jwZsZzsA3NsB5D2ZlBmgvD-d1OnwuF9luYKCiTKDWjgFNtqBUNyyiCzeNrRmfv3TOSq=w57-h81-no?authuser=0" width= "35px">
+              <br>
+               <p style="font-size:15px">Business Consulting</p>
+              <p style="font-size: 11px;">The Podes that recognize the talent and effort of the best web
+              designers,developers and agencies in the world></p>
+            </li>
+          </ul>
+
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-3" style="  display: flex;
+        align-items: center;background-color:black">
+      
+        <ul>
+          <li style="color: #ffffff;"><img src="https://lh3.googleusercontent.com/wMuWN2IfuPW0L7ioXJE9OVxXpkS6-KszHmfUPB-75NxnN54ArsPPNi234n6l2BOH1-gYQooN7-CEPXUdkbxjYD2MEAtyIuatPIWwO4usABkN2_zrzMctP7Lde7dYpYt5KDHYsju33tqx0Tz4d0l2sYaxgV7r_QcbjFW1-YNTBLmj1JguNtET_gusDIj-18FriDqp-ZW4LLQVQeJHwgFzUJ0YqCrYP50Vv5MVvG4nOCNGWITss7zddcZKC5eb1pVFm5qTNlXllkbUjUhP1JJOB-23EZQdtiCV8_h2ZO5EcglP8oj0ob22EHP45i_MJg0ufqaIVjGwSuRwh9B0jnJYmtTuZSM7d_PsiXJoYMlzQkl7_pfmkyGDhMDbcMu_IPivc1fa6uJdEFLIBq0QHPIox0dDEEFcz01Pf486-rAON1-jXrnhXlBzuz-sPxGneTl0oMAnmXMW63B4QZ_EWAZg1Q_abJyZvwy_hhJ_poB3Up0fz1SwC89C1m12-NTZDfFrjklCfbKbh2LBlUZq6NoZfY1g7N0lRtCgYAZEjJ2FcWjDBCO_CiVQFDFj2cxLtBEq7x9j6EWk-P5_Lz8O9Tofavg17yfA5sSw57VNI5aqKkueeEBE25S84Kd97eccwkeIV-lmqRi4deLwD2hVoSnDV_tZWbhh80EiDIRjQL2aLAtWJZegXzJZqSGSRom6=w116-h188-no?authuser=0" width="35px">
+            <br>
+             <p style="font-size:15px">Lawyer Consulting</p>
+           <p style="font-size: 11px;"> The Podes that recognize the talent and effort of the best
+            web designers,developers and agencies in the world></p>
+          </li>
+          <li style="color: #ffffff;"><img src="https://lh3.googleusercontent.com/mNWpI1OKXpLWSKmYt_eKayJ-N8-SkHELiqmKexK-FS9sj_oBei3Jq-yKKUfOWapAjeQ5D_pzuFspTh6spwFajKdGOXi1FJ4nncYScXwMMEUS2T9MTZXcMLKmUSlIoubagpH_XpfYFPQE-St47ahnMs7M6tUUGNyMPqzGIwKEMHi3kwRbI0xuZDTLxqgMkXsEmek9__50jLqhxKYCwNi4GKp8EI10-BBKCUTbc4Lvmg9ArWo_3lVaHJnOexobAX4dtgPscTkZNMpVkvLNOKoqxpA8p-zr5F7mfBVHQDUqQRtkdNtUpM7PjBobagQlQiUY5LPwnE36t3NCI5t0n1z1jHvDO_F0Itww_QNTaO6zc-kKvmYcsokTWL1Z2eT3lYQEJ93oY_ZR1VQlsBzD5M33AOGseh9kLxr38zb0yTwzkGiD3oXF_8quCG8cjeamoxh2gAsYW52C00ORNe-JykNGcpPcCdKGu9KSXHYOAPOchiURITWnHDyJK4Ol_iJtGgDVAYxHcV-Fnm45umrSAs9MGSnTdYV7g6tN2plSxy8oQPiomUGM1MVE3ufQkfzJ_5IMptDEuqgSJKaUUau5DavICz6ReLorK0H55WMeG5R7RhWoRm0-WWsBx2Yc_zeZNqHsUo5ZjNTkYw9zEqp1My_f-rhAlPvlVTdsCFUk35a8HkBmlAZTPZcF5L6DdrRb=w147-h196-no?authuser=0" width="35px">
+            <br>
+             <p style="font-size:15px">It Management</p>
+            <p style="font-size: 11px;">The Podes that recognize the talent and effort of the best web
+            designers,developers and agencies in the world.</p>
+          </li>
+        </ul>
+  </div>
+    </div><br /><br /><br />
+    
+<div class="card mx-auto border-0" style="width: 50%;">
+      <div class="container -fluid ">
+        <div class="row">
+
+          <div class="col-md-7 ">
+            <div class="card-body">
+              <p class="card-text " style="font-family: Arial, Helvetica, sans-serif;"><h2>What People Say</h2><img src="https://lh3.googleusercontent.com/ulr5xv7rpQgsa2fQVvHPdSjq-Y7co_gqdgodIYjU9CpHlwm-ytjxxnVat1IQVpR9setEG3ejT8Luh8WEjeAm07_A3skQEusxFN6vzAq_tAmrymEv8hEvnVaRH4Yu--1A1f5qyIHXPo1Z-txNvBfySoDUI8gCdP81VbVRaM2106ANMmu7rmE4DdeYJi8KrD1Bms_ATLpM4w-AZTJjyVbfWTKwEegAhCQ1T7ChBk1kYJyfKFbobjl1L_TsVuqeIGIALaokIhRilKvyOxxJzc_UCtXn7luCNCs07ij76X_7WSdntXUq_6Z-g1SLA5mcDK-xPM3pTB493h8EfCzmbuE8GVk4s55tM28GTTN2sqbNsEczJxYWQaKhpkPEbT1QprgpQXm5o-0dQFbs9WvEaByyS7OSw6KoQ-fVaDf1tPk6EsG1T1yJg-sv_aSP65nqORubABgK6fFvNNBI1SJX1dkn9d5YaXTkHw5Hat2eD3AkVwwueHyQtmSD37TuDONxYGHWZqo3um_pOi6kwbJT7ldpLiP9R97NotBgLnTmbTou2q7cQzfT6UvFCdyrzf7bC-DU_FrU0hwH_ogNuyoFP5bjXNPQnIIpaJeEzuloUViKtt-jRYOaqkSBZTG3Vitt1cSeuc9z6mDUN8pcgGt2tGjNP0kgE0bRSETXMapubBIiC1FzT6K2QQCLwK2iNKhv=w49-h45-no?authuser=0" width="30px"><br><br />My experience with Podes is absolutely
+                positiv.The themes are beautifully designed and well documented.Podes theme provide quick and
+                competent
+                support.
+ <br /></p>
+            </div>
+          </div>
+          <div class="col-md-5 ">
+            <img class="card-img" src="https://lh3.googleusercontent.com/EmQJdeDBh3-hlwoV_KZtW8gpXFI1NmmwzstnCvpBu7q-LBAc1OyN990s4fiJGiyShsfsfpcuy_cF22QnOQdNrH--5taTFBCRK3O6vKcC83uXfnkHfbs0ImFnOc5A_3lrh-bDKshWLLY-JzsV6AJww5YxAUawnH_S9DFRNnMbpBg3HdewvZbEGWSnfPWJ-BLL29U1n97NCKtogJL_0-6IYT-BC3t8RKZeMVXQoVASlRkRQuiyP_TpyzWfRoYdqrDA6tAa7LUydeYj9GL6zEWfB_dsNnd6VDoEONDl8jmvXNLjifW8GeLthPD0Qg5WLiYcemywiavJ3rptkqcBWyksuc1hQGJgyjKVEvlomGsNKuTiEoglXCKTf20dmvzBbPUaXBORGf5PeiNBy25NJk7vQUtCHQkDabBhlvBwuIQ0Z_S0SVJwcU3R1c5ekHOFA_kK-J8Gok7AfQgO8FgrCQk6ElxOR43A9p36WWFJp9XwCM2EysZ0dimo1buxSTCdeMUc8Aff5GHYNrDmTUjeP01oklfRLVWuSTdhomp0_Lq_waQI2qbDblWLM3wkAUG-zAF0jtSUFILHiAvNZlp4v1UMUy361biNccDQTwPC6gMncsaNenr0poXMSH5b_FjABP5b4Zm4l8ng-c8WbWqAXNwXo8cMEsa5UEZFAeFhpUchVEVAoxniv-39y-UVIRVq=w212-h255-no?authuser=0" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div><br /><br /><br />
+  <div class="text-center"><img src="https://lh3.googleusercontent.com/j0vk-TJdCe10zRSkONZPNqgXo91x7MSgNyMrHkXFS7LP1DjiSXfoO7dZ5XXUmwSpIEW3wA7lu4IqoJeWt7pde9DFuk6ncrK_jQoSNDnU34tbGjW9pfKaHdIpLcNcSP58fgrRXgeeCLGi_MO2_5AmNZkw--U0pnMYOR9BCZwhJs3V-XJA2pz6hQRY13zZPagvjbJjfwFvHzbCN-0Pw0hIiiHg05UT1snEoPjDSqH4xlcrYLl9woVGoXjdwK5EmDrFW6R6h_YDmpXSxh-xIzt8N3HhzpZCA-H6BKyb7OXzG7DAcPk_BaAv9bwjtgx7UXXUOur_YgI6SOsKV_ZrCAIB7IJd4UtCGHMSy8fh3RtLbfbLSOShNVKh15N8XcTP_e0lu6nup6OMJMByT9-xGfB-yMUaDlPPWh5JPF_dehpJ9WYN2SCdp2sUhM3e4HAvL3ECeUuNWkIuxwpplAMWEGRAHmVTk76Of8Jnkxyjuo-eB_wgkkj_rL-KbYHOkL8hkqW9ZaiFY3LXmLPMrlls5rXJ7hZD8aIsX7WYj2zs4-u032DyS78kObQnKJNrJaiQkWkZNkor56FN8bPmz4YJ3HkTifTQi-aORo2Ikckilwa3LQIRpiap9LjEGXgzqm2jkog0o3HlypqRjpggUvg3OB1rP5wOaWvnParm4Pq0bcxu1ucJA5bWkyBpL5UipFQs=w1350-h303-no?authuser=0" style="width: 100%;height: 255px;"></div><br /><br />
+
+  <div style="margin-left:20%;font-size: 2em;"><b>Our Projects</b></div>
+
+  <br />
+
+  <div class="card-group">
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/pw/ACtC-3f42CeVi2rvCuL5gwHBeJUdgPifXJpAnSwTqxg-OtPMOzGCk-aIaZ8vcIVAcrROO75rwr02vu22NWepuTcr9ZKPW56VdJXvSvY-CxwNZgQbjdLbG772rxMlJa5UhJ0mZmGCUytyuf0-QSpph-Qg58rl=w283-h178-no?authuser=0" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="card-text" ><span><b>&ensp;&ensp;&ensp;Projects Saves our Jobs</b><br />
+            <small>&ensp;&ensp;&ensp;&ensp;Businiess,Marketing</small></span>&ensp;&ensp;&ensp;
+          <i class="fa fa-angle-right" aria-hidden="true"
+            style="font-size:30px; position: absolute;top: 15px;right:25px ;"></i>
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/aTbhzoY9nAswoCtycLUYtmOjZb5juV2KU5zI7cPK47bjGo0As5MIcK9idZkkSQ8Z8qkvQBIdIxirSgQ2d4-NnM9DPLVKo80uKPZA3aY5OrEeF2YpwqfAUCt0R5B4TWKzsJW-Y3lZwRuE-3v5952DSCNNzjdvAQkEwuVb0-zTZMGQJbZSa-ZSVUIYcrQ-8fllM3a9xxLwvolL051fRLHAl7WBbbC6_D6S5wSxHuUUh0gJ6syWghL71ej_n_kJCJdAvFdxoNSkpQW6c5Xagyfuli2yGLULigIx3DoUFA4haaUJHDgNOhj_2BbUBF0kCd9DPDeoURY3RnirFEi5GiM7WoL2td7iyEjVFIXUxDJVFpLkbv7j2-QZDwcWAMPgjWGsZepzxB3euBT84QLSv0VhtcwW7VW0D5WGZJ6w1QLajwaiCLMAa435WFzBs6NcoDBSEJIgZHl46esCghEmGL-ZkmZuA2Gy5YAsKLYu2TtsoF8uEhEl9-zvfVgQbuhUOfTRC7hDUYt3fqSrY-_y-aFhMviND1iUAdPS54_wabQ4NBMYxHN9aHZ9ixcDpK2ScNPWeSGh2rqCgDVJHuk40zX48pxJbbxqMsTEiteDY1FO8ZCB4ypQ4qyo1CSsBNqwNcBlf44LfccQkvLyFhpbheZuPVfryAHfn9Ez-vZ6EYkY-J_A--tyhiBIYhiqO-Y_=w366-h265-no?authuser=0" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="card-text"><span><b>&ensp;&ensp;&ensp;Projects Saves our Jobs</b><br />
+            <small>&ensp;&ensp;&ensp;&ensp;Businiess,Marketing</small></span>
+          <i class="fa fa-angle-right" aria-hidden="true"
+            style="font-size:30px; position: absolute;top: 15px;right:25px ;"></i>
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/4bxwWBhupGmuh4jV0-AQmy-lHiwgj0c_mrBT2CjAYl5jcMfWk508tG5H5j2KG2RXomABNG5BDCK9qRYtF4QNsk-aXoTyryxejODdtqaZb_yWuRWLIks2KLDJxroXHIX5zmgCEKKeixpi07VMd6V9Vy4naeFS5ruvIxPv-auVbNESKt3wBNfgKgfJwzgsK9GFK_o-BnHiYGINHd7ez96j-4WS88mlnXi4nJ86dIkXEgxTr84jCM1yjGupFck1n7steJI-ncdYukW_Ahbj4fmuo2Vba0fsxo35HzKEJqvhBOx7SLwLLyoOkCn_lP-SJBOV_SoAvwJva0RhsLy7ZMogYZDIZYC8KGp8tlH9yFWvXj0nQfwjpa37czPGkAiIJLbdR5ttEZ-nzDy2K_3M9pa0PnCamQ6NEDOkhiDVaZfFLmqc-iT0b5JE2r8vdZNJ48sWo2HfQHU__IyLA-l0ezu-HS2n-bT2g5GBUzpfRdwtjZUulKRU_x68uBAt9R3sOGxchE4SotRog3w6Erz45L2BXNMGa6Frh2hh5c1n0W8xEFjYeQTP4hzWMf3AsMZdFKa-qyrJbBYdG76IL-XYb1BEn0LCCjSLbXOhjgjhaGvNaNq7Sn9yJpD73Tqe1lBRc9NxrYzF0X2g0glcY5YtGxsHn6jKuubRJ2nQIRwmuO-LczimBkNrMgV687q6axRl=w275-h174-no?authuser=0" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="card-text"><span><b>&ensp;&ensp;&ensp;Projects Saves our Jobs</b><br />
+            <small>&ensp;&ensp;&ensp;&ensp;Businiess,Marketing</small></span>
+          <i class="fa fa-angle-right" aria-hidden="true"
+            style="font-size:30px; position: absolute;top: 15px;right:25px ;"></i>
+        </span>
+      </div>
+    </div>
+    <div class="card">
+      <img src="https://lh3.googleusercontent.com/-vAf3phNL5xYiqXjP2CzkxMenxa9Qjb5H4co7ZQzZc3OZDp5NgrdZnG7Sk5tK6ntUj6aVH4sam1aOqS5kZ1sULKLPreQlvlZObU1TtPIiuYHCN52Zi29GkXESljp89GzTKX0K2zmD4CPlPCgz7c24yUn3kPxMJZ77am9OvLYt-pwji5wT54fKJ_WLhEcaQr7km0SjIkkSNiUgYRNSqxvaMA3g0uGsMD1-A-1E2TfRqs49MNJ_sPJi2XVh9_kps6OtqHpqkpmrPOspO1lxbCqFXDlUDMQaxtz46uPTCDudPVcvwT0ftUYq7kIRmmG2RinaWWtXWXQWWClL9IEwjpaYRl0Ow52nhbssi5o6XBzpWoNK6TjInn1T-8F3CFQR92p3uFLGB0uekCS7REWdfyCl2gTKHFKGckmW9AMhynO3RsINYajv9aDre-W45qIbfidfV68RiUxnWIJ5PK3tYX8WpSeLmfgEBKTgRRxI90DYbnYUWc-lI8C18q3i4S7mKg9D8u61XSgNyGT2U5CC7Cg-xLDdFo8T2wWtsSUpWjEs23X2sibPY95x_CoR35sRDl4XxNiFy--ZAgllMdm8BxdOTX5NIBowTW3N_w9pzkYwTR4TnOLt8ZJ9wZgBYZEbmDFDqnF04B-49veDTxVy0uWYiZ28VGat6khn2CwWPOOxOgm2jhf_Lzr1daotT5T=w640-h405-no?authuser=0" class="card-img-top" alt="...">
+      <div class="card-body">
+        <span class="card-text"><span><b>&ensp;&ensp;&ensp;Projects Saves our Jobs</b><br />
+            <small>&ensp;&ensp;&ensp;&ensp;Businiess,Marketing</small></span>
+          <i class="fa fa-angle-right" aria-hidden="true"
+            style="font-size:30px; position: absolute;top: 15px;right:25px ;"></i>
+        </span>
+      </div>
+    </div>
+  </div><br /><br />
+<div style="margin-left:20%;font-size: 2em;"><b>Latest News</b></div>
+  <br /><br />
+  <div class="card-deck" style="margin-left:20%;margin-right:20%;">
+    <div class="card" style="border:none">
+      <img class="card-img-top" src="https://lh3.googleusercontent.com/pw/ACtC-3fa_MDv_rn75C-oMd2l2_paAuUQSKtsAuhpfpcUgsAyYa9q83F1ghdK4_UKhq-csIIpNGqGXF4gwoVbVkWDys65RTtI1Ru5fF8Qtd1G96o8J6IY33dLC8iSKXXlwdcY5SOzQQHOzG5kG4JVL5f-jSlU=w369-h261-no?authuser=0" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text"><small class="text-muted">26 NOV 2016</small></p>
+        <h6 class="card-title"><b>Tips For Achieving Financial Security</b></h6>
+        <p class="card-text"><button class="bttn"><b>READ MORE ></b> </button></p>
+      </div>
+    </div>
+    <div class="card" style="border:none">
+      <img class="card-img-top" src="https://lh3.googleusercontent.com/R0eEG9xieh_FhEsEKThyQoLB1ZwI4q3M33Qx3q0K0mD6CTLn-uwbZetnVHnxIJ6xXyKHoRbzzmsXH0MtpwRjfRAmYkKCUDReD5g0z0s9xu9hkeziwoHwDyRiVZlFGcjhyNN3nRjq1WepYLgpN44F6PjATvTOg3tt2gJoRNe_wG9b3PehVkCiFOnfhA18u_gZDbKT3XGsBn_xihQ6d02rmd4VDzCNhVEKHShwir9KmoYsKsXZ7CTkjnQ9dE6khSZMh2hIqqzwm_PGeBEy0rSsZj4Nzb4yZiMBmim8iLcCXcdSe9eEM3bIMz7jbwbkDaWYsaWB0JmxUuJmD0TUbJvk9klpyhfc6ggMmNhMky1qN7YpzAIr9xMtXNiuUvdNOMv7maUt3TOha0x_x2wkzAFF2ya5eSfqWhi9YHgRtv0RJalU1Az008qqNkgUFbAkba8Bw4et_fDOsM4UWUN3YIoax04mxy45l6elplpWxnXqqnUq16OPW4gIm1lUmbhxlAb9Ly4l5LUbg914MEwXvmxAQqjM-Uc_po4vGMcuSViXoBoA0tgoVcMc6FrNZiO5yd4t03zU6A1arlxg23HLpQ6ysZc-3sEG1GiXxWuGJYSGnEXJx_0rMbNpTE7GrMBqBKS49Xi_Q7tXQlcr53KwV5KGnk9faCuOUvdbEFbUzmJH7W71NKCjP6fvL0wv8dbw=w275-h174-no?authuser=0" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text"><small class="text-muted">26 NOV 2016</small></p>
+        <h6 class="card-title"><b>Strategic and commercial approach with issues</b></h6>
+        <p class="card-text"><button class="bttn"><b>READ MORE ></b> </button></p>
+      </div>
+    </div>
+    <div class="card" style="border:none">
+      <img class="card-img-top" src="https://lh3.googleusercontent.com/NOrtJld64ZBdfDIuR9_zRvzgnKLuIhYcvXk9QxfRIUhYTrkXnlLavPwkhXRqdl7rfCE0fTnMINetl4fxtGtGsveN7BBLVircdiAFU-D1T4L0Aq075WydchJQgptpBn6zlHLgOOlB7b8ji1k2Ji3VAtOEMv9P9qU9lPE5wfLY8AZ7T172WkGWWjLRMta_iKDael5w50mkIFqis9F6OOe--9qNtzrWu0GVDoRDAPM75jsL3I0eAjhGHjIfN0Ijn7Lk_uysrWmUqql2FViJiH5Hfzjya7z7mOY15gTtXrhUm_dr59tuwlV3AZJ2WkoXWouzwekMu1Ioip_JWZbE2y0Iq9zuRHWV5_nEreAUFmkxISAst-P1tRL-j1YB84M420CkIa3A5_WVNdZu3a2p5a7f_FGqUvwq5CHFN5yP6-mrepbqs7IORYVNyMDtielO-tnxYV1GFxUR22j-gDp1ebtuF2z3WPOAJQacYRiEQCT3hRmdqzkVLNXbjKhRJ0v0Ph_uBeI-2ok3jykVOWysKimjoViTYnip3tATziP87sdwKUPfm_yvWtjptwNDA8KU3ZXUzoElOc941D1bG1qMNc0bcVsA4As2-KV37z_HDiXvrNWS7_xBJIAX8MQ4eChfqNrTXiiqGnPFqgMpNbucfP2yEQmmVYeUQ7s3cTUfkYEh5sHJFsOSWPSFUiZ7reiT=w369-h265-no?authuser=0" alt="Card image cap">
+      <div class="card-body">
+        <p class="card-text"><small class="text-muted">26 NOV 2016</small></p>
+        <h6 class="card-title"><b>Financial Planners, One Philosphy</b></h6>
+        <p class="card-text"><button class="bttn"><b>READ MORE ></b> </button></p>
+      </div>
+    </div>
+  </div>
+  <br />
+  <img src="https://lh3.googleusercontent.com/pw/ACtC-3cCEU2mpZBDE4Hw2qW_TGotuD9e5ENmdau3BClSVM8HaFhnyUYHN6lao_SQUZlNUjemr0NemzTzJ38ujyIBMZaezlPqPQsEw5VU7SN-zg6CrjZ_7TTmUkuth7RCCmpgF3Ln9OG9b1ErI7AB3gd2iGU-=w990-h451-no?authuser=0" width="100%" height="531px" style="position: relative;bottom: -50px;" ;>
+  <div class="text-center">
+    <a href="#top"><img src="https://lh3.googleusercontent.com/pHOFpds8NdTDd15zkqrp095mmsPYIc3bJdZwtkEtGXIjL8Aru8uy9nWhkTmY-TZTOYBK2JZXnZm_R2go2tW0k30KkS08mLXLWO7Jf0QwN9faqVgFni9KeaKEh7csR6Vg7dCiyq80q_RFGhOYDSFSkVJAnDDkJHnvrXffBsaW-isyOX7IJj3gKAoRqGhjDPkhbY2wAVBEk1o0TgoOoBTab61kYv7GLrgcbo76xRyihF8aT-EkW-7iEHpjM1uP1BIGx0x_PjHYJJ9f38gir25prcjrkuv2MfQcVTJvi4S9DC0W16coJCx7gYCG0ywhXSnAcv03Vx1X2ZAVmkqT-IFfmrnjYyvKFLD2_E2qBhj1UTuk9KTm3NWu7tPasVE12tGrOvYUyMh_iK9CPNC1YjBI6fbQxSfKW9Ja21bm2zCtjhFOGrwmkH5cvh1cGwxWMmJtpayQ90WRjgSFEdwxcbd_v0f16eCOogrwIKqQrNtu1JW7fR2Ga0IA1u94GLR6P7AFbyf43Rdh0T1QuB-ScRtXb74FpLN6XsCMc77AL6Y1Xl8RWzLxxJiVwXk7H4fTcQi1wCbaKWjuZ3FwwUg2F3sK6bIMXLwmJ7zWmxFR7BauvQerRC7XuXBhCvz_6bMVdA3xNwRukiMHkcFTovZPAflgSpMWWcnMZmO1AyqeH2Ym3-oaFC1vjjuOMXZEx6yK=w201-h79-no?authuser=0" width=10% height="42px" style="position: relative;bottom:12px;"></a>
+  </div>
+  <div class="container-fluid" style="background-color:rgb(25, 22, 31)" id="bottom">
+    <br /><br /><br />
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4" style="color: #ffffff;">About us
+          <br /><br /><br />
+          Our foundation may be insurance,but we<br /> have evolved and so have the solutions<br /> that we provide.
+        </div>
+
+        <div class="col-md-4" style="color: #ffffff;">
+          Latest Twister
+          <br /><br /><br />
+          @Leonard I am so happy because I found <br />this Real stata,and it just made
+          Podes easier.<br />Thanks so much for sharing
+          <br /><br />
+          @Leonard I am so happy because I found <br />this Real stata,and it just made
+          Podes easier.<br />Thanks so much for sharing
+        </div>
+
+        <div class="col-md-4" style="color: #ffffff;">
+          RECENT WORKS
+          <br>
+          <img src="https://lh3.googleusercontent.com/0HGV-Nd3F2GAbfBKUcKntFo7gRUMrFl8ACo5Xav_oUnE9RbtktCcDyJmrSME5WFMlPQ2GR7dvtgXi_p8ptS5MI9whQ3B6hnCP_m3uRHqS_uil-utb33mP6FLe8JkOoYIiOxKh7K2Tjs1G_0OOiRsCDfhxTFEtMEGRk5yhMvchNzNb_289pXdKTd6YzYRQkp1uucxxsDQOqS2lmH34HwCDO1iyUbhJW6M5J-7vi9DAZ80QYqP6TjDIkvlC7O_XMYJJcPXPqYNMn9CWqtvYBGSNjgggqRX2LBbEb3PsXt06iTCFCIyAXWIxvyGIGBj8t-9BnooOYrQ1qdUEwIdaNTFLy_vR-JFoErRFGgCKbY7rC5n3ATVlKKLgGZ4pVX6YCsJPuoU2-JmNe5iXKzpijhviRlfllKyrMO4fYeTY7Qv9LR6wTxPEdoV8bSycmEt4frwfyLu0exoVzp7axl9P0Fu1Q6iGa8dy7Sya9E3T5ZrrBV8JW99m9Uv_DFWrwJV-zNZurNIkxYObfBbPx7Hnv0ZACx65Gq8OVFpypZFERO2trdqaQLRTtGKNbXAescR1E0cyLDgOBKeREW4ltPzouONlHAfSybHwUolesCpo3jBl8Pxey6VJE6WPs_CMemHkRet7vxBNI_oqCdRTZK5ICPdlZkSdyf1gAC5nNwqKYhue4VZ16Nbuk-lfgkBEp4t=w371-h176-no?authuser=0" width="100%" style="position: relative;bottom: -50px;" ;>
+
+
+
+        </div>
+      </div>
+
+      <hr class="footer">
+    </div>
+    <br>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3 col-sm-12>
+          <img src="https://lh3.googleusercontent.com/SRilHCaPtXYL5WMy8al5u03987qGXsIxdpgNNbh8O-61Lb70tdRzI_rYaHO-Hu424Uf3r82FBqVoK9Q6AJv-mk3SpjvEzmJqJhJYuQ0NeNtscBdX0BnviwDDnXsjh4nvU-ZVNARWtM9R1fEjrBuPisMUcPe9nIbWpdlZaagoO3UDu_VpoDi2p5kT2aAkbKNSLs5bol6T3Py3ZmdK9VsRGPgLEYogJmVgfUD5wQrUJBrrd1Yv7_0f9qfrBmoNoeEEPxqxPlykk-E1DAa4ICx31I1m4XyCe8gSEfAyBrTlqJbSmY0vQW9pIkAB8-RCHi8BBwJTbnECdueaU1oFPT2puE1-_f_lk3jPkfX_nNV8Y9VQ0OFIhE4LZvKgwhZuAgCPzRfnitW747Mgr9FgkcVRhi4hOHZ1idego6GC67ZzfydXuB-48WYmyja9_hfevKc2l0bhF4b2pLwjOt1oMEGVFeac05ERAezy9ACqD15kznbGGYzq5ailMtOmlh5hwpCmTTRyXQM2Lavi3y56ZnYZSp5CH9ZTdlJy0JSCs-hlVroq0JBEw56qb5VNY7HxVbITFbhXj4jkQRStJh-QSGdTuRr57iW5vCNWfFdK1mgr91PNn86eVXNTKpbYpDySBxkXZt1eOkDLqzLofJ8okNRUS1SSKFz30X0cIpcv92OpUzWPGD3j7CnNu_nCTlHa=w479-h120-no?authuser=0" width="150px" ;></div>
+        <div class="col-md-5 col-sm-12 col-12  about">
+          <a href="#">Demos</a>
+          &ensp;&ensp;&ensp;&ensp;
+          <a href="#">Featured</a>
+          &ensp;&ensp;&ensp;&ensp;
+          <a href="#">Portfollo</a>
+          &ensp;&ensp;&ensp;&ensp;
+          <a href="#">Blog</a>
+          &ensp;&ensp;&ensp;&ensp;
+          <a href="#">Contact</a>
+          &ensp;&ensp;&ensp;&ensp;
+        </div>
+
+        <div class="col-md-2 col-sm-12"></div>
+
+        <div class="col-md-2 col-sm-12">
+          <a href="#" class="fa fa-facebook"></a>
+          &ensp;&ensp;&ensp;
+          <a href="#" class="fa fa-twitter"></a>
+          &ensp;&ensp;&ensp;
+          <a href="#" class="fa fa-instagram"></a>
+          &ensp;&ensp;&ensp;
+          <a href="#" class="fa fa-pinterest"></a></div>
+        &ensp;&ensp;&ensp;
+
+        <br> <br>
+      </div>
+    </div>
+  </div>
+  
+</body>
+
+</html>
